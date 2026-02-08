@@ -1,1 +1,193 @@
-<h1>githuybpages </h1>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manual del Sistema — Gestión de Turnos</title>
+
+  <meta name="description" content="Manual de usuario del sistema de gestión de turnos hospitalarios. Introducción y bienvenida." />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos generales -->
+  <link href="./assets/css/styles.css" rel="stylesheet">
+</head>
+
+<body class="index">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="./index.html">
+        <span class="icon-badge">🩺</span>
+        <span>Manual del Sistema</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navMain" aria-controls="navMain"
+              aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="./crear.html">Crear</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./anadir.html">Añadir</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./modificar.html">Modificar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./descargar.html">Descargar</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BIENVENIDA / INTRODUCCIÓN -->
+  <header class="container py-5">
+    <div class="hero p-4 p-lg-5">
+      <div class="row g-4 align-items-center">
+        <div class="col-12 col-lg-8">
+          <h1 class="display-6 fw-semibold mb-3">
+            Manual de Usuario
+            <span class="d-block fs-4 text-secondary mt-1">
+              Sistema de Gestión de Turnos
+            </span>
+          </h1>
+
+          <p class="text-secondary mb-3">
+            Bienvenido al manual del sistema de gestión de turnos, desarrollado
+            para apoyar la organización, control y registro de los turnos laborales
+            del personal en entornos hospitalarios.
+          </p>
+
+          <p class="text-secondary mb-0">
+            Este manual ha sido diseñado como una guía clara y estructurada,
+            orientada al uso diario del sistema, con el fin de garantizar
+            la correcta administración de la información y la estandarización
+            de los procesos.
+          </p>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <div class="bg-white border rounded-4 p-4 shadow-sm">
+            <h2 class="h6 fw-semibold mb-2">Recomendación de uso</h2>
+            <p class="small text-secondary mb-0">
+              Se recomienda leer esta introducción antes de utilizar el sistema,
+              para comprender su alcance y el flujo general de trabajo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- OBJETIVO DEL MANUAL -->
+  <section class="container pb-4 pb-lg-5">
+    <div class="bg-white border rounded-4 p-4 p-lg-5">
+      <h2 class="h4 fw-semibold mb-3">Objetivo del manual</h2>
+
+      <p class="text-secondary mb-3">
+        El presente manual tiene como objetivo proporcionar una referencia
+        clara sobre el uso del sistema de gestión de turnos, describiendo
+        las funciones disponibles y su correcta aplicación.
+      </p>
+
+      <p class="text-secondary mb-0">
+        Su correcta utilización contribuye a mantener la integridad de los datos,
+        reducir errores operativos y facilitar la generación de reportes confiables.
+      </p>
+    </div>
+  </section>
+
+  <!-- ESTRUCTURA DEL SISTEMA -->
+  <section class="container pb-5">
+    <div class="bg-white border rounded-4 p-4 p-lg-5">
+      <h2 class="h4 fw-semibold mb-4">Funciones principales del sistema</h2>
+
+      <p class="text-secondary mb-4">
+        El sistema se encuentra organizado en cuatro funciones principales,
+        las cuales deben utilizarse siguiendo el flujo recomendado.
+      </p>
+
+      <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="icon-badge mb-3">🧩</div>
+              <h3 class="h6 fw-semibold">Crear</h3>
+              <p class="small text-secondary mb-0">
+                Permite iniciar un nuevo registro de turnos desde cero.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="icon-badge mb-3">➕</div>
+              <h3 class="h6 fw-semibold">Añadir</h3>
+              <p class="small text-secondary mb-0">
+                Incorpora información adicional a un registro existente.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="icon-badge mb-3">✏️</div>
+              <h3 class="h6 fw-semibold">Modificar</h3>
+              <p class="small text-secondary mb-0">
+                Permite corregir o actualizar datos previamente registrados.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="icon-badge mb-3">⬇️</div>
+              <h3 class="h6 fw-semibold">Descargar</h3>
+              <p class="small text-secondary mb-0">
+                Genera reportes y archivos finales del proceso.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-info mt-4 mb-0">
+        Este manual debe utilizarse como referencia oficial para el uso correcto
+        del sistema dentro de la institución.
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container py-4 d-flex justify-content-between align-items-center">
+      <div class="small text-secondary">
+        © <span id="year"></span> Sistema de Gestión de Turnos — Manual de Usuario
+      </div>
+      <a href="./index.html" class="small text-decoration-none">Inicio</a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
