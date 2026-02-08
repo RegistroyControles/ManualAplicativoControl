@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manual del Administrador — Gestión de Turnos</title>
+
+  <meta name="description" content="Manual del administrador: funciones críticas y control del sistema." />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS del sistema -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Imágenes uniformes -->
+  <style>
+    .img-manual{
+      width: 100%;
+      height: 340px;
+      object-fit: contain;
+      background: #ffffff;
+    }
+    @media (max-width: 576px){
+      .img-manual{ height: 220px; }
+    }
+  </style>
+</head>
+
+<body class="modificar">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <span class="icon-badge">🩺</span>
+        <span>Manual del Sistema</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navMain" aria-controls="navMain"
+              aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="crear.html">Crear</a></li>
+          <li class="nav-item"><a class="nav-link" href="anadir.html">Añadir</a></li>
+          <li class="nav-item"><a class="nav-link" href="modificar.html">Modificar</a></li>
+          <li class="nav-item"><a class="nav-link" href="descargar.html">Descargar</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CABECERA -->
+  <header class="container py-5">
+    <div class="hero p-4 p-lg-5">
+      <h1 class="h3 fw-semibold mb-2">Manual del administrador</h1>
+      <p class="text-secondary mb-0">
+        Módulo de acceso restringido para control operativo y administración del sistema.
+      </p>
+    </div>
+  </header>
+
+  <!-- CONTENIDO -->
+  <section class="container pb-5">
+    <div class="bg-white border rounded-4 p-4 p-lg-5">
+
+      <!-- INTRO -->
+      <h2 class="h5 fw-semibold mb-3">Acceso restringido</h2>
+
+      <p class="text-secondary">
+        Bienvenido a la sección <strong>“Manual del administrador”</strong>, un módulo de acceso restringido que solo
+        puede habilitarse mediante el <strong>código QR proporcionado</strong> o a través de la <strong>dirección URL autorizada</strong>.
+        Este espacio concentra funciones críticas para la gestión y control del sistema, por lo que su uso debe limitarse
+        exclusivamente al personal con privilegios administrativos.
+      </p>
+
+      <p class="text-secondary mb-4">
+        Entre las herramientas disponibles se incluyen el <strong>bloqueo de periodos</strong>, la <strong>gestión de feriados</strong>
+        y la <strong>administración de datos estructurales</strong>, orientadas a mantener la integridad y el orden operativo del aplicativo.
+      </p>
+
+      <div class="alert alert-warning mb-0">
+        Importante: este módulo está destinado únicamente a personal autorizado. Cualquier cambio realizado puede impactar
+        directamente en el funcionamiento general del sistema.
+      </div>
+
+      <hr class="my-4">
+
+      <!-- BLOQUEO DE MESES -->
+      <h2 class="h5 fw-semibold mb-3">1. Bloqueo de meses</h2>
+
+      <p class="text-secondary">
+        La funcionalidad <strong>“Bloqueo de meses”</strong> permite restringir la edición de la programación correspondiente
+        a un periodo determinado, evitando modificaciones posteriores no autorizadas.
+      </p>
+
+      <p class="text-secondary">
+        El sistema puede realizar este bloqueo de forma automática al iniciar un nuevo mes. Por ejemplo, al llegar al
+        <strong>1 de febrero a las 00:00 horas</strong>, el mes de enero quedará bloqueado, previniendo cambios de último momento
+        y asegurando la estabilidad de la información.
+      </p>
+
+      <p class="text-secondary mb-4">
+        Asimismo, el administrador podrá bloquear periodos de manera anticipada para mantener un mayor control organizativo.
+        Para ello, deberá seleccionar el mes y el año mediante los controles desplegables y definir el alcance del bloqueo:
+      </p>
+
+      <ul class="text-secondary mb-4">
+        <li><strong>Global:</strong> aplica la restricción a todas las especialidades.</li>
+        <li><strong>Por especialidad:</strong> limita el bloqueo únicamente al área seleccionada.</li>
+      </ul>
+
+      <p class="text-secondary mb-4">
+        Finalmente, utilice los botones <strong>“Bloquear mes”</strong> o <strong>“Desbloquear mes”</strong> según corresponda.
+        Esta función es clave para preservar la consistencia de la planificación.
+      </p>
+
+      <figure class="text-center my-4">
+        <img src="assets/img/admin_bloqueo_meses.png"
+             class="img-fluid rounded-4 border shadow-sm img-manual"
+             alt="Interfaz de bloqueo de meses">
+        <figcaption class="small text-secondary mt-2">
+          Figura 1. Bloqueo y desbloqueo de meses (global o por especialidad).
+        </figcaption>
+      </figure>
+
+      <div class="alert alert-info mb-0">
+        Recomendación: verifique el periodo seleccionado (mes/año) antes de bloquear o desbloquear para evitar restricciones no deseadas.
+      </div>
+
+      <hr class="my-4">
+
+      <!-- FERIADOS -->
+      <h2 class="h5 fw-semibold mb-3">2. Gestión de feriados</h2>
+
+      <p class="text-secondary">
+        La sección <strong>“Feriados”</strong> permite administrar y actualizar los días no laborables del sistema.
+        Tras seleccionar el mes correspondiente desde el menú principal, se mostrará un calendario donde podrá marcar
+        el día deseado dentro del rango disponible.
+      </p>
+
+      <p class="text-secondary mb-4">
+        Al seleccionar la opción <strong>“Marcar feriado”</strong>, el registro quedará almacenado en el historial en formato Excel,
+        accesible únicamente para la cuenta del administrador principal. Este control garantiza la trazabilidad de los cambios realizados.
+      </p>
+
+      <figure class="text-center my-4">
+        <img src="assets/img/admin_feriados.png"
+             class="img-fluid rounded-4 border shadow-sm img-manual"
+             alt="Gestión de feriados en calendario">
+        <figcaption class="small text-secondary mt-2">
+          Figura 2. Gestión de feriados y registro en historial.
+        </figcaption>
+      </figure>
+
+      <div class="alert alert-warning mb-0">
+        Importante: los cambios de feriados impactan en la planificación mensual. Se recomienda registrar y verificar los feriados antes de la asignación final de turnos.
+      </div>
+
+      <hr class="my-4">
+
+      <!-- GOOGLE SHEETS -->
+      <h2 class="h5 fw-semibold mb-3">3. Administración de datos en Google Sheets</h2>
+
+      <p class="text-secondary">
+        Esta sección tiene un carácter principalmente informativo y describe el manejo de las plantillas de Google Sheets que respaldan
+        el funcionamiento del sistema. Desde este entorno es posible realizar ajustes avanzados, manteniendo la estructura de las plantillas oficiales.
+      </p>
+
+      <p class="text-secondary mb-4">
+        El acceso y la edición de estos archivos deben gestionarse con responsabilidad, pudiendo compartirse únicamente con usuarios autorizados.
+      </p>
+
+      <div class="alert alert-info mb-4">
+        Recomendación: antes de realizar cambios avanzados en plantillas, se sugiere conservar una copia de respaldo para prevenir pérdidas de estructura.
+      </div>
+
+      <!-- Archivo: Usuarios -->
+      <h3 class="h6 fw-semibold mb-2">Archivo: Usuarios</h3>
+      <p class="text-secondary mb-3">
+        Dentro del archivo se encuentra la hoja <strong>“Usuarios”</strong>, destinada a la administración de credenciales.
+        Aquí se gestionan los nombres de usuario, contraseñas, permisos y demás datos necesarios para el inicio de sesión.
+        El sistema no establece un límite para la creación de usuarios.
+      </p>
+
+      <!-- Hoja: Historial -->
+      <h3 class="h6 fw-semibold mb-2">Hoja: Historial</h3>
+      <p class="text-secondary mb-3">
+        La hoja <strong>“Historial”</strong> registra todos los movimientos efectuados desde la implementación del aplicativo,
+        proporcionando un seguimiento completo de las acciones realizadas.
+      </p>
+
+      <p class="text-secondary mb-4">
+        Aunque estos registros pueden eliminarse cuando sea necesario, es indispensable conservar las etiquetas y las primeras celdas de la plantilla
+        para no comprometer la estructura del archivo.
+      </p>
+
+      <!-- Archivo: Config Turnos -->
+      <h3 class="h6 fw-semibold mb-2">Archivo: Config Turnos</h3>
+      <p class="text-secondary mb-0">
+        El documento <strong>“Config Turnos”</strong> almacena los valores y variables que determinan el comportamiento del sistema.
+        El administrador podrá añadir o modificar parámetros según los requerimientos operativos, siempre que se respete la estructura establecida
+        para garantizar la estabilidad del aplicativo.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container py-4 d-flex justify-content-between align-items-center">
+      <div class="small text-secondary">
+        © <span id="year"></span> Sistema de Gestión de Turnos
+      </div>
+      <a href="index.html" class="small text-decoration-none">Inicio</a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

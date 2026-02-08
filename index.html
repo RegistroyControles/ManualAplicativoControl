@@ -12,6 +12,19 @@
 
   <!-- Estilos generales -->
   <link href="./assets/css/styles.css" rel="stylesheet">
+
+  <!-- Imágenes uniformes (solo para este index) -->
+  <style>
+    .img-manual{
+      width: 100%;
+      height: 340px;
+      object-fit: contain;
+      background: #ffffff;
+    }
+    @media (max-width: 576px){
+      .img-manual{ height: 220px; }
+    }
+  </style>
 </head>
 
 <body class="index">
@@ -103,6 +116,49 @@
         Su correcta utilización contribuye a mantener la integridad de los datos,
         reducir errores operativos y facilitar la generación de reportes confiables.
       </p>
+    </div>
+  </section>
+
+  <!-- VER TURNOS -->
+  <section class="container pb-4 pb-lg-5">
+    <div class="bg-white border rounded-4 p-4 p-lg-5">
+      <h2 class="h4 fw-semibold mb-3">Ver turnos</h2>
+
+      <p class="text-secondary">
+        La sección <strong>“Ver turnos”</strong> constituye una de las primeras opciones disponibles al acceder
+        al aplicativo. Su finalidad es proporcionar una visualización clara y organizada de la programación
+        correspondiente al periodo mensual seleccionado.
+      </p>
+
+      <p class="text-secondary">
+        Este módulo dispone de un selector de especialidad que permite filtrar la información según el área requerida.
+        Una vez realizada la selección, el sistema mostrará automáticamente el informe de turnos asociado a dicha especialidad.
+      </p>
+
+      <p class="text-secondary mb-3">
+        La nomenclatura utilizada facilita la identificación del tipo de personal mediante un sufijo:
+      </p>
+
+      <ul class="text-secondary mb-4">
+        <li><strong>-E:</strong> corresponde al personal de Enfermería.</li>
+        <li><strong>-T:</strong> corresponde al personal Técnico.</li>
+      </ul>
+
+      <p class="text-secondary mb-4">
+        Por ejemplo, <strong>“Cardio-E”</strong> identifica al personal de enfermería de Cardiología, mientras que
+        <strong>“Cardio-T”</strong> hace referencia a los técnicos de la misma especialidad. Este criterio se aplica de manera
+        uniforme en todas las áreas, favoreciendo una lectura rápida y reduciendo posibles confusiones.
+      </p>
+
+      <!-- IMAGEN: VER TURNOS -->
+      <figure class="text-center my-4 mb-0">
+        <img src="assets/img/ver_turnos.png"
+             class="img-fluid rounded-4 border shadow-sm img-manual"
+             alt="Sección Ver turnos con selector de especialidad">
+        <figcaption class="small text-secondary mt-2">
+          Figura 1. Vista general de la sección “Ver turnos”.
+        </figcaption>
+      </figure>
     </div>
   </section>
 
