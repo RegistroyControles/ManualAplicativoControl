@@ -1,0 +1,2 @@
+# ManualAplicativoControl
+Manual para usuarios 
